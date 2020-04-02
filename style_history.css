@@ -1,0 +1,357 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  position: relative;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  background-color: #a2eafa;
+  margin: 0;
+}
+.nav li.button3 {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #253f70;
+  font-weight: bold;
+  left: 700px;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #a2eafa;
+  border-bottom: solid 7px transparent;
+}
+
+.box {
+  width: 100%;
+  background-color: #009BD5;
+  height: 800px;
+}
+.box .people {
+  cursor: pointer;
+  position: absolute;
+  left: 22%;
+  top: 10%;
+  width: 10%;
+  min-width: 150px;
+  -webkit-animation: ani 2s infinite;
+          animation: ani 2s infinite;
+}
+.box .say, .box .say2 {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  width: 700px;
+}
+.box .button {
+  cursor: pointer;
+  position: absolute;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: solid 4px #4D4D4D;
+  color: #4D4D4D;
+}
+.box .button.button1 {
+  background-color: #FF0000;
+  top: 65%;
+  left: 60%;
+  color: white;
+}
+.box .button.button1:hover {
+  font-size: 35px;
+}
+.box .button.button2 {
+  background-color: #39B54A;
+  top: 65%;
+  left: 67%;
+}
+.box .button.button2:hover {
+  font-size: 35px;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes ani2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes ani2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+.timer {
+  visibility: hidden;
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.say2 {
+  visibility: hidden;
+}
+
+.centered {
+  visibility: hidden;
+  position: absolute;
+  top: 46%;
+  left: 60%;
+  trasform: translate(-50%, -50%);
+}
+
+.book-bg {
+  position: relative;
+  width: 150px;
+  height: 192px;
+  background: url("https://i.imgur.com/2MFWHXZ.png") no-repeat;
+  background-size: contain;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.book-cover {
+  position: absolute;
+  background: url("https://i.imgur.com/pbizP8m.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 0.3s ease;
+  transition-delay: 0s;
+}
+
+.book-bg:hover .book-cover {
+  -webkit-transform: rotateY(-60deg);
+          transform: rotateY(-60deg);
+  cursor: pointer;
+}
+
+.book-bg:hover {
+  cursor: pointer;
+}
+
+.vedio {
+  visibility: hidden;
+  cursor: pointer;
+  width: 10%;
+  position: absolute;
+  top: 46.2%;
+  left: 47%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.vedio:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.black_box {
+  visibility: hidden;
+  border: solid 1px;
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: -3%;
+  left: 97%;
+  width: 50px;
+}
+
+.centered1 {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.book-bg1 {
+  position: relative;
+  width: 500px;
+  height: 384px;
+  background: url("https://i.imgur.com/GWQ5Hig.png") no-repeat;
+  background-size: contain;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  transition-delay: 0s;
+}
+
+.book-cover1 {
+  position: absolute;
+  background: url("https://i.imgur.com/Ddna6Qk.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 1s ease;
+}
+
+.page1 {
+  position: absolute;
+  background: url("https://i.imgur.com/9oLmIr3.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 1s ease;
+}
+
+.page2 {
+  position: absolute;
+  background: url("https://i.imgur.com/4FitTep.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 1s ease;
+}
+
+.page3 {
+  position: absolute;
+  background: url("https://i.imgur.com/qZtjxKD.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 1s ease;
+}
+
+.page4 {
+  position: absolute;
+  background: url("https://i.imgur.com/nWU8fQU.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 1s ease;
+}
+
+.page5 {
+  position: absolute;
+  background: url("https://i.imgur.com/ufwHCly.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: all 1s ease;
+}
+
+.page_show {
+  visibility: visible;
+}
+
+.back {
+  visibility: hidden;
+  cursor: pointer;
+  position: absolute;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: solid 4px #4D4D4D;
+  background-color: #FF0000;
+  top: 65%;
+  left: 65%;
+  color: white;
+}
+
+.back_index {
+  cursor: pointer;
+  top: 70%;
+  left: 88%;
+  width: 10%;
+  transition-duration: 0.5s;
+}
+.back_index:hover {
+  width: 11%;
+}
+
+.vi {
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}

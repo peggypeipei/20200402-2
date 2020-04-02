@@ -1,0 +1,307 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  position: relative;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #F78733;
+}
+
+.box {
+  background-color: #F78733;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: auto;
+}
+.box .cabinet {
+  width: 1000px;
+  height: 700px;
+  background-image: url("https://i.imgur.com/41Gp5VN.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.box .cabinet .wine1 {
+  position: absolute;
+  top: 90px;
+  left: 150px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/elZ3ncX.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.box .cabinet .wine1:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+.box .cabinet .wine2 {
+  position: absolute;
+  top: 90px;
+  left: 330px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/Nu8uTxJ.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.box .cabinet .wine2:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+.box .cabinet .wine3 {
+  position: absolute;
+  top: 90px;
+  left: 520px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/VwMnc1A.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.box .cabinet .wine3:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+.box .cabinet .wine4 {
+  position: absolute;
+  top: 230px;
+  left: 150px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/Uk2oWqQ.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.box .cabinet .wine4:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+.box .cabinet .wine5 {
+  position: absolute;
+  top: 230px;
+  left: 325px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/UdODe80.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.box .cabinet .wine5:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+
+.wine6 {
+  position: absolute;
+  top: 230px;
+  left: 520px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/mHtpF5C.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.wine6:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+
+.wine7 {
+  position: absolute;
+  top: 380px;
+  left: 440px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/jo8QESm.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.wine7:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+
+.wine8 {
+  position: absolute;
+  top: 380px;
+  left: 230px;
+  width: 10%;
+  height: 100px;
+  background-image: url("https://i.imgur.com/lT5VKUL.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.wine8:hover {
+  width: 10%;
+  height: 120px;
+  cursor: pointer;
+}
+
+.content {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 70px;
+  left: 800px;
+}
+.content .text1, .content .text2 {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+}
+.content .text1 {
+  width: 400px;
+  font-weight: bold;
+  font-size: 60px;
+  top: 100px;
+  left: 100px;
+  color: white;
+}
+.content .text2 {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  color: white;
+  top: 250px;
+  left: 100px;
+  width: 450px;
+  height: 250px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.pic1 {
+  position: absolute;
+  cursor: pointer;
+  top: 550px;
+  left: 1300px;
+  width: 120px;
+  transition-duration: 0.5s;
+}
+.pic1:hover {
+  width: 140px;
+}
+
+@-webkit-keyframes ani1 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes ani1 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes ani2 {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+@keyframes ani2 {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+@-webkit-keyframes ani3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes ani3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+.nav {
+  background-color: #b35a27;
+  margin: 0;
+}
+.nav li.button3 {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #401e0b;
+  font-weight: bold;
+  left: 700px;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: solid 7px transparent;
+}
